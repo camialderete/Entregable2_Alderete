@@ -1,8 +1,9 @@
 const productos = [
-  { id: 1, nombre: "Espresso", precio: 7000 },
-  { id: 2, nombre: "Capuccino", precio: 5500 },
-  { id: 3, nombre: "Latte", precio: 6000 }
+  { id: 1, nombre: "Espresso", precio: 500 },
+  { id: 2, nombre: "Capuccino", precio: 700 },
+  { id: 3, nombre: "Latte", precio: 800 }
 ];
+
 let carrito = [];
 
 if (localStorage.getItem("carrito")) {
@@ -46,7 +47,7 @@ function agregarAlCarrito(id) {
   if (cantidad > 0) {
     const item = carrito.find(p => p.id === id);
     if (item) {
-      item.cantidad += cantidad; 
+      item.cantidad += cantidad;
     } else {
       carrito.push({ ...producto, cantidad: cantidad });
     }
