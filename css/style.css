@@ -1,39 +1,16 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #ffffff;
-  color: #333;
+  font-family: Georgia, 'Times New Roman', serif;
 }
-
-h1 {
-  color: #442255;
+header {
+  background: #f3ebe5;
 }
-
-#productos {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+h1, h2 {
+  color: #5c3317;
 }
-
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  width: 150px;
-  text-align: center;
-  background: #f9f9f9;
+.btn-dark {
+  background-color: #5c3317;
+  border: none;
 }
-
-button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-  border: 1px solid #442255;
-  border-radius: 4px;
-  background-color: #442255;
-  color: white;
-}
-
-button:hover {
-  background-color: #85519f;
+.btn-dark:hover {
+  background-color: #85523a;
 }
